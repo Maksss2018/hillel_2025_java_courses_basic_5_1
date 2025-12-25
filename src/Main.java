@@ -29,7 +29,7 @@ void main() {
 
        System.out.printf(templateForOutPut,
                earnedSum,
-               taxesNumber*100,
+               taxesNumber,
                actualTaxes
        );
 
