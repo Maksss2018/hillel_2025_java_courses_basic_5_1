@@ -3,9 +3,9 @@ void main() {
     System.out.print("Please indicate the amount earned in the past quarter: ");
     var earnedSum = Double.parseDouble(scanner.nextLine());
     var taxesNumber =  switch (earnedSum) {
-     case 0.0 < earnedSum && earnedSum <= 1000.0 -> 0.025;
-     case 1000.0 < earnedSum && earnedSum <= 25000.0  -> 0.043;
-     case 25000.0 < earnedSum -> 0.067;
+     case 0.0 < earnedSum && earnedSum <= 1000.0 -> 2.5;
+     case 1000.0 < earnedSum && earnedSum <= 25000.0  -> 4.3;
+     case 25000.0 < earnedSum -> 6.7;
         default -> 0.0;
  };
   /*  double taxesNumber = 0.0;
