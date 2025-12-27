@@ -1,11 +1,12 @@
 void main() {
     Scanner scanner = new Scanner(System.in); // Create a Scanner object
     System.out.print("Please indicate the amount earned in the past quarter: ");
-    var earnedSum = Double.parseDouble(scanner.nextLine());
-    var taxesNumber =  switch (earnedSum) {
-     case 0.0 < earnedSum && earnedSum <= 1000.0 -> 2.5;
-     case 1000.0 < earnedSum && earnedSum <= 25000.0  -> 4.3;
-     case 25000.0 < earnedSum -> 6.7;
+    var earnedSum =scanner.nextLine();
+    var quarter =  Double.parseDouble(earnedSum);
+    var taxesNumber =  switch (quarter) {
+     case double a when 0.0 < a && a <= 1000.0 -> 2.5;
+     case double a when 1000.0 < a && a <= 25000.0  -> 4.3;
+     case double a when 25000.0 < a -> 6.7;
         default -> 0.0;
  };
   /*  double taxesNumber = 0.0;
